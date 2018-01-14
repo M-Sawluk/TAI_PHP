@@ -1,0 +1,194 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 36px;
+    margin-top: 20px
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-weight: bold
+    
+}
+
+.w-input,
+.w-select {
+    display: block;
+    width: 100%;
+    height: 38px;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333333;
+    vertical-align: middle;
+    background-color: #ffffff;
+    border: 1px solid #cccccc
+}
+
+.w-form-label {
+    display: inline-block;
+    cursor: pointer;
+    font-weight: normal;
+    margin-bottom: 0
+}
+
+.w-checkbox,
+.w-radio {
+    display: block;
+    margin-bottom: 5px;
+    padding-left: 20px
+}
+
+.rent-wrapper {
+    display: none;
+    width: 40%;
+    min-width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 25px;
+    border-radius: 30px;
+    background-color: #444343;
+    color: #b1a6a6;
+}
+
+.renttext {
+    display: inline-block;
+    min-height: 50px;
+    border: 3px solid #181fcf;
+}
+
+.renttext:focus {
+    border-color: #2ba744;
+}
+
+.submitbutton {
+    width: 100%;
+    padding-left: 15px;
+    border-color: #161010;
+    border-radius: 10px;
+    background-color: #080808;
+    background-image: linear-gradient(#9f9f9f, #535353 3%, #1f1f1f 17%, #212121 49%, #191919 89%, #000000 100%);
+    border-top: 1px inset rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    color: #d1d1d1;
+    font-weight: 700;
+    text-shadow: 0px -1px black, 0px 1px rgba(255, 255, 255, 0.25);
+    line-height: 18px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.close:hover {
+    color: #f50b0b;
+}
+
+.heading {
+    padding-bottom: 20px;
+}
+
+.radio-button-field {
+    display: inline-block;
+}
+
+.radio-button-field-2 {
+    display: inline-block;
+}
+
+.field-label {
+    margin-right: 11px;
+}
+
+.field-label-2 {
+    position: static;
+    left: 0px;
+    top: 0px;
+    display: block;
+    overflow: visible;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+    clear: none;
+    color: #da8820;
+    font-size: 20px;
+    text-align: left;
+}
+
+.red-border{
+    border: red solid 3px;
+}
+
+.red-class{
+    color: red;
+}
+
+.fade-out-fwd {
+	-webkit-animation: fade-out-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-moz-animation: fade-out-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: fade-out-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.fade-out-top {
+	-webkit-animation: fade-out-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
+	-moz-animation: fade-out-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
+	animation: fade-out-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
+}
+
+.bounce-left {
+	-webkit-animation: bounce-left 0.8s both;
+	-moz-animation: bounce-left 0.8s both;
+	animation: bounce-left 0.8s both;
+}
+
+@keyframes bounce-left {
+  0% {
+    transform: translateX(-48px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateX(-26px);
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateX(-13px);
+    animation-timing-function: ease-in;
+  }
+  82% {
+    transform: translateX(-6.5px);
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateX(-4px);
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87%,
+  98% {
+    transform: translateX(0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateX(0px);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out-fwd{0%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}100%{-webkit-transform:translateZ(80px);transform:translateZ(80px);opacity:0}}
+
+@keyframes fade-out-top{0%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}100%{-webkit-transform:translateY(-50px);transform:translateY(-50px);opacity:0}}
