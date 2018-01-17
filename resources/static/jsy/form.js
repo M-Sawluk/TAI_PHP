@@ -6,9 +6,11 @@ var vid = document.getElementById("vid");
 var pause = document.getElementById("vidPause");
 var rentForm = document.getElementById("rentForm");
 var conts = document.getElementsByClassName("container1");
-
+var loginbut = document.getElementById("loginbut");
+var loginForm = document.getElementById("loginForm");
 
 var formOut = false;
+var loginOut = false;
 
 function formFadeIn() {
     conts[0].classList.add("fade-out-fwd");
@@ -17,6 +19,7 @@ function formFadeIn() {
     setTimeout(function () {
         conts[0].style.display = "none";
         conts[1].style.display = "none";
+        loginFormFadeOut();
         form.classList.add("fade-out-top");
         form.style.display = "block";
         formOut = true;
@@ -36,14 +39,39 @@ function formFadeOut() {
     }, 600)
 }
 
+function loginFormFadeIn(){
+    if(formOut)
+        formFadeOut();
+    loginOut = true;
+    setTimeout(function () {  
+        loginForm.classList.add("fade-out-top");
+        loginForm.style.display = "inline";
+        }, 400);
+}
+
+function loginFormFadeOut(){
+    loginForm.classList.toggle("fade-out-top");
+    loginForm.classList.add("fade-out-fwd");
+    setTimeout(function () {
+        loginForm.style.display = "none";
+        loginOut = false;
+    }, 600)
+}
 vid.addEventListener("click", function () {
     if (formOut)
         formFadeOut();
+    if(loginOut)
+        loginFormFadeOut();
     formOut = false;
     rentForm.reset();
 })
 rentButton.addEventListener("click", function () {
     formFadeIn();
+})
+loginbut.addEventListener("click", function () {
+    if(loginOut)
+        loginFormFadeOut();
+    loginFormFadeIn();
 })
 
 close.addEventListener("click", function () {

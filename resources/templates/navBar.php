@@ -9,15 +9,15 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <?php
-                    if(basename($_SERVER['PHP_SELF'])=='index.php'){
-                        echo '<li class="active"><a href="index.php">Strona domowa</a></li>';
-                        echo '<li><a href="rent.php">Wypożyczalnia samochodów</a></li>';
-                        echo '<li><a href="">Kontakt</a></li>';
-                    } else {
-                        echo '<li><a href="index.php">Strona domowa</a></li>';
-                        echo '<li class="active"><a href="rent.php">Wypożyczalnia samochodów</a></li>';
-                        echo '<li><a href="">Kontakt</a></li>';
-                    }                 
+                if (basename($_SERVER['PHP_SELF']) == 'index.php') {
+                    echo '<li class="active"><a href="index.php">Strona domowa</a></li>';
+                    echo '<li><a href="rent.php">Wypożyczalnia samochodów</a></li>';
+                    echo '<li><a href="">Kontakt</a></li>';
+                } else {
+                    echo '<li><a href="index.php">Strona domowa</a></li>';
+                    echo '<li class="active"><a href="rent.php">Wypożyczalnia samochodów</a></li>';
+                    echo '<li><a href="">Kontakt</a></li>';
+                }
                 ?>
             </ul>
             <ul class="nav navbar-nav" id="nri">
@@ -38,7 +38,7 @@
                 </li>
 
                 <li>
-                    <a href="">Zaloguj się <span class="glyphicon glyphicon-log-in"></span></a>
+                    <a href="#" id="loginbut"><b>Zaloguj się</b><span class="glyphicon glyphicon-log-in"></span></a>
                 </li>
             </ul>
         </div>

@@ -63,5 +63,13 @@
         public function setRoles($roles) {
             $this->roles = $roles;
         }
+        
+        public function toString() {
+            echo 'User: name: '.$this->name.' secondName: '.$this->secondName.
+                    ' email: '.$this->email.' telephone: '.$this->telephone.
+                    ' address: '.$this->address.' role: '.$this->roles;
+        }
+
+
     }
 

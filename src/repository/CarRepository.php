@@ -1,5 +1,6 @@
 <?php
 interface CarRepository {
-    public function findAll();
+    function findAll();
+
 }
 
